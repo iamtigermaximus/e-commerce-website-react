@@ -7,7 +7,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:black;
+    background-color:#19181A;
     height: 8vh;
 }
 .category{
@@ -52,10 +52,173 @@ nav{
     padding-bottom: 10px;
     display: none;
 }
+.close-icon{
+    display: none;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+}
+.card{
+    width: 250px;
+    height: 350px;
+    background: transparent !important;
+    border-radius: 10px !important;
+}
+.card-img{
+  height: 250px;
+  border-radius: 10px !important;
+ 
+}
+
+/*MEN PAGE*/
+.men-page{
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    height: 100vh;
+    width: 100%;
+}
+.men-hero-container{
+    background-image: url(./images/men1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*WOMEN PAGE*/
+.women-page{
+    background-image: radial-gradient( circle farthest-corner at 0.1% 53.8%,  rgba(255,182,172,1) 0%, rgba(255,123,172,1) 100.2% );
+    height: 100vh;
+    width: 100%;
+    }
+.women-hero-container{
+    background-image: url(./images/women1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*JEWELRY PAGE*/
+.jewelry-page{
+    background-image: linear-gradient( 102.1deg,  rgba(96,221,142,1) 8.7%, rgba(24,138,141,1) 88.1% );
+    height: 100vh;
+    width: 100%;
+}
+.jewelry-hero-container{
+    background-image: url(./images/jewelry1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*ELECTRONICS PAGE*/
+.electronics-page{
+    background-image: linear-gradient( 109.6deg,  rgba(44,83,131,1) 18.9%, rgba(95,175,201,1) 91.1% );
+    height: 100vh;
+    width: 100%;
+}
+.electronics-hero-container{
+    background-image: url(./images/electronics1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*HOME ----MEN SECTION*/
+.men-section .section-top{
+    height: 50%;
+    background-color: #1B9CE5;
+    display: flex;
+   justify-content: center;
+}
+.men-section .section-bottom{
+    height: 50%;
+    background-color: #6CDAEE;
+
+}
+.men-section .column1{
+    height: 400px;
+    background-image: url(./images/men1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.column2{
+    height: 400px;
+}
+/*HOME ----WOMEN SECTION*/
+.women-section .section-top{
+    height: 50%;
+    background-color:#DA7B93 ;
+}
+.women-section .section-bottom{
+    height: 50%;
+    background-color: #EDB5BF;
+}
+.women-section .column1{
+    height: 400px;
+    background-image: url(./images/women1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+/*HOME ----JEWELRY SECTION*/
+.jewelry-section .section-top{
+    height: 50%;
+    background-color: #57BA98;
+}
+.jewelry-section .section-bottom{
+    height: 50%;
+    background-color: #65CCB8;
+}
+.jewelry-section .column1{
+    height: 400px;
+    background-image: url(./images/jewelry1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+/*HOME ----ELECTRONICS SECTION*/
+.electronics-section .section-top{
+    height: 50%;
+    background-color:#1E4258 ;
+}
+.electronics-section .section-bottom{
+    height: 50%;
+    background-color: #265077;
+}
+.electronics-section .column1{
+    height: 400px;
+    background-image: url(./images/electronics1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
 
 
 /*MOBILE*/
 @media (max-width:768px){
+    
     .burger{
         display: block;
         padding-bottom: 10px;
@@ -64,6 +227,7 @@ nav{
         color: azure;
         font-size: 30px;
         padding-left: 45px;
+        display: block;
     }
     .search-bar{
         display: none;
@@ -71,28 +235,54 @@ nav{
     .category{
         position: absolute;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         left: 0;
-        top: 0;
-        width: 50%;
-        height: 100%;
-        background-color: black;
-        justify-content: flex-start;
-        align-items: flex-start;
+        top: 8vh;
+        width: 100%;
+        height: 8vh;
+        background-color:#19181A;
+        justify-content: space-around;
+        align-items: center;
+        transform: translateY(0%);
+        transition: transform 0.5s ease-out;
+    }
+    .category.active{
         transform: translateX(-100%);
         transition: transform 0.5s ease-in;
     }
-    .category.active{
-        transform: translateX(0%);
-        transition: transform 0.5s ease-in;
-    }
-    .category li{
-        margin-top: 40px;
-    }
+    
     .cart-container li{
         list-style: none;
         padding-top: 12px;
         padding-right: 10px;
     }
+    .card{
+    width: 180px;
+    height: 250px;
+    background: transparent !important;
+    border-radius: 10px !important;
 }
+.card-img{
+  height: 180px;
+  border-radius: 10px !important;
+   padding: 10px;
+}
+section{
+    height: 100%;
+    width: 100%;
+}
+.men-section .section-top{
+    height: 40%;
+    background-color: #1B9CE5;
+    display: flex;
+   justify-content: center;
+}
+
+}
+
+  @media (max-width:480px) {
+     .heading-content{
+         height: 50%;
+     }
+  }
 

@@ -3,17 +3,17 @@ import {FaBars, FaUser, FaHeart,FaShoppingCart, FaStar, FaTimes} from 'react-ico
 import {Link} from 'react-router-dom'
 
 const Navbar = () => {
-    const [sidebar, setSidebar] = useState(false);
+    const [click, setClick] = useState(false);
+  
     
-    const categoryMenu= () => setSidebar(!sidebar)
+    const categoryMenu= () => setClick(!click)
 
     return (
         <nav>
-            <div className="burger">
-                <FaBars onClick={categoryMenu}/>
+            <div className="burger" onClick={categoryMenu}>
+                {click ? <FaTimes/> : <FaBars/>} 
             </div>
-            <ul className={sidebar ?"category active": "category"} onClick={categoryMenu}>
-                <li className="close-icon"><FaTimes/></li>
+            <ul className={click ?"category": "category active"} onClick={categoryMenu}>
                 <li><Link className="item-link" to="/men">MEN</Link></li>
                 <li><Link className="item-link" to="/women">WOMEN</Link></li>
                 <li><Link className="item-link" to="/jewelry">JEWELRY</Link></li>
