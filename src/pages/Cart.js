@@ -12,7 +12,8 @@ const Cart = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-8 col-10 mx-auto">
+                    <div className="row">
+                        <div className="col-lg-6 col-md-8 col-10 mx-auto">
                             <div className="cart-buttons">
                                 <div className="cart-links">
                                 <button className="btn btn-primary col-12 mx-auto fs-6 mb-2" type="submit">Login</button>
@@ -20,6 +21,7 @@ const Cart = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
