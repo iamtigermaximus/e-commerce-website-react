@@ -1,17 +1,13 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import MenProductImage from '../images/men2.jpg'
 import ProductCard from '../components/ProductCard'
-import axios from 'axios'
+//import axios from 'axios'
+import data from '../data/db.json'
 
 
-const Men = () => {
-    const [men, setMen] = useState([])
-    useEffect(() => {
-        axios.get("http://localhost:8000/men")
-            .then(response => {
-            setMen(response.data)
-        })
-    }, []);
+const Men =()=> {
+    
+    
     return (
         <div className="men-page">
             <div className="men-hero-container">
@@ -23,7 +19,7 @@ const Men = () => {
                     <div className="-products-container">
                         <div className="container">
                             <div className="row p-3">
-                            {men.map(item => (
+                            {data.men.map(item => (
                                 <div className="col-lg-3 col-md-3  col-6 mt-2">
                                     <ProductCard
                                         id={item.id}
