@@ -1,7 +1,16 @@
-import React from 'react'
-import Image4 from '../images/image-gallery-sugarcubes.jpg'
+import React, {useState, useEffect} from 'react'
+import ElectronicsProductImage from '../images/electronics2.jpg'
+import ProductCard from '../components/ProductCard'
+import axios from 'axios'
 
 const Electronics = () => {
+    const [electronics, setElectronics] = useState([])
+    useEffect(() => {
+        axios.get("http://localhost:8000/electronics")
+            .then(response => {
+            setElectronics(response.data)
+        })
+    }, []);
     return (
         <div className="electronics-page">
             <div className="electronics-hero-container">
@@ -13,110 +22,17 @@ const Electronics = () => {
                     <div className="-products-container">
                         <div className="container">
                             <div className="row p-3">
-                                <div className="col-lg-3 col-md-3 col-6 mt-2">
-                                    <div className="card">
-                                        <img src={Image4} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                        <div className="text-center">
-                                            <button className="btn btn-primary btn-sm">add to cart</button>
-                                        </div>
-                                    </div>
-                                </div>
+                                {electronics.map(item => (
                                 <div className="col-lg-3 col-md-3  col-6 mt-2">
-                                    <div className="card">
-                                        <img src={Image4} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                        <div className="text-center">
-                                            <button className="btn btn-primary btn-sm">add to cart</button>
-                                        </div>
-                                    </div>
+                                    <ProductCard
+                                        id={item.id}
+                                        name={item.name}
+                                        description={item.description}
+                                        price={item.price}
+                                        image={ElectronicsProductImage}
+                                    />
                                 </div>
-                                <div className="col-lg-3 col-md-3 col-6 mt-2">
-                                    <div className="card">
-                                        <img src={Image4} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                        <div className="text-center">
-                                            <button className="btn btn-primary btn-sm">add to cart</button>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div className="col-lg-3 col-md-3 col-6 mt-2">
-                                    <div className="card">
-                                        <img src={Image4} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                        <div className="text-center">
-                                            <button className="btn btn-primary btn-sm">add to cart</button>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div className="col-lg-3 col-md-3 col-6 mt-2">
-                                    <div className="card">
-                                        <img src={Image4} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                        <div className="text-center">
-                                            <button className="btn btn-primary btn-sm">add to cart</button>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div className="col-lg-3 col-md-3 col-6 mt-2">
-                                    <div className="card">
-                                        <img src={Image4} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                        <div className="text-center">
-                                            <button className="btn btn-primary btn-sm">add to cart</button>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div className="col-lg-3 col-md-3 col-6 mt-2">
-                                    <div className="card">
-                                        <img src={Image4} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                        <div className="text-center">
-                                            <button className="btn btn-primary btn-sm">add to cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-3 col-6 mt-2">
-                                    <div className="card">
-                                        <img src={Image4} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                        <div className="text-center">
-                                            <button className="btn btn-primary btn-sm">add to cart</button>
-                                        </div>
-                                    </div>
-                                </div>
+                            ))}
                             </div>
                         </div>
                     </div>
