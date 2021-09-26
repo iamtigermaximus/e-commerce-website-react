@@ -226,7 +226,17 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-   
+}
+.column2{
+    height: 400px;
+}
+.column2-content{
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.column2-title{
+    font-size: 50px;
 }
 /*HOME ----JEWELRY SECTION*/
 .jewelry-section .section-top{
@@ -335,19 +345,10 @@ section{
     height: 100%;
     width: 100%;
 }
-.men-hero-container,
-.women-hero-container,
-.jewelry-hero-container,
-.electronics-hero-container
-{
-    height: 20vh;
-}
+
 }
 
   @media (max-width:480px) {
-     .heading-content{
-         height: 50%;
-     }
 .card{
     width: 130px;
     height: 240px;
@@ -365,7 +366,16 @@ section{
 .btn{
     font-size: 8px !important;
 }
-.column1{
+.men-section .column1{
+    height: 200px;
+}
+.women-section .column1{
+    height: 200px;
+}
+.jewelry-section .column1{
+    height: 200px;
+}
+.electronics-section .column1{
     height: 200px;
 }
 .column2{
@@ -388,6 +398,13 @@ section{
 }
 .column-item{
     font-size: 10px;
+}
+.men-hero-container,
+.women-hero-container,
+.jewelry-hero-container,
+.electronics-hero-container
+{
+    height: 20vh;
 }
   }
 
