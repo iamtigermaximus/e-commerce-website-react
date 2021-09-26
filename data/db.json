@@ -11,6 +11,52 @@
             "name":"Men Item",
             "description":"Lorem ipsum lorem",
             "price":20
+        },{
+            "id":3,
+            "name":"Men Item",
+            "description":"Lorem ipsum lorem",
+            "price":30
+        },
+        {
+            "id":4,
+            "name":"Men Item",
+            "description":"Lorem ipsum lorem",
+            "price":40
+        },{
+            "id":5,
+            "name":"Men Item",
+            "description":"Lorem ipsum lorem",
+            "price":50
+        },
+        {
+            "id":6,
+            "name":"Men Item",
+            "description":"Lorem ipsum lorem",
+            "price":60
+        },
+        {
+            "id":7,
+            "name":"Men Item",
+            "description":"Lorem ipsum lorem",
+            "price":70
+        },
+        {
+            "id":8,
+            "name":"Men Item",
+            "description":"Lorem ipsum lorem",
+            "price":80
+        },
+        {
+            "id":9,
+            "name":"Men Item",
+            "description":"Lorem ipsum lorem",
+            "price":90
+        },
+        {
+            "id":10,
+            "name":"Men Item",
+            "description":"Lorem ipsum lorem",
+            "price":100
         }
     ],
     "women":[
@@ -25,6 +71,54 @@
             "name":"Women Item",
             "description":"Lorem ipsum lorem",
             "price":20   
+        },
+        {
+            "id":3,
+            "name":"Women Item",
+            "description":"Lorem ipsum lorem",
+            "price":30   
+        },
+        {
+            "id":4,
+            "name":"Women Item",
+            "description":"Lorem ipsum lorem",
+            "price":40   
+        },
+        {
+            "id":5,
+            "name":"Women Item",
+            "description":"Lorem ipsum lorem",
+            "price":50   
+        },
+        {
+            "id":6,
+            "name":"Women Item",
+            "description":"Lorem ipsum lorem",
+            "price":60   
+        },
+        {
+            "id":7,
+            "name":"Women Item",
+            "description":"Lorem ipsum lorem",
+            "price":70   
+        },
+        {
+            "id":8,
+            "name":"Women Item",
+            "description":"Lorem ipsum lorem",
+            "price":80   
+        },
+        {
+            "id":9,
+            "name":"Women Item",
+            "description":"Lorem ipsum lorem",
+            "price":90   
+        },
+        {
+            "id":10,
+            "name":"Women Item",
+            "description":"Lorem ipsum lorem",
+            "price":100   
         }
     ],
     "jewelry":[
@@ -100,6 +194,54 @@
             "name":"Electronics Item",
             "description":"Lorem ipsum lorem",
             "price":20   
+        },
+        {
+            "id":3,
+            "name":"Electronics Item",
+            "description":"Lorem ipsum lorem",
+            "price":30   
+        },
+        {
+            "id":4,
+            "name":"Electronics Item",
+            "description":"Lorem ipsum lorem",
+            "price":40   
+        },
+        {
+            "id":5,
+            "name":"Electronics Item",
+            "description":"Lorem ipsum lorem",
+            "price":50   
+        },
+        {
+            "id":6,
+            "name":"Electronics Item",
+            "description":"Lorem ipsum lorem",
+            "price":60   
+        },
+        {
+            "id":7,
+            "name":"Electronics Item",
+            "description":"Lorem ipsum lorem",
+            "price":70   
+        },
+        {
+            "id":8,
+            "name":"Electronics Item",
+            "description":"Lorem ipsum lorem",
+            "price":80   
+        },
+        {
+            "id":9,
+            "name":"Electronics Item",
+            "description":"Lorem ipsum lorem",
+            "price":90   
+        },
+        {
+            "id":10,
+            "name":"Electronics Item",
+            "description":"Lorem ipsum lorem",
+            "price":100   
         }
     ]
 }
