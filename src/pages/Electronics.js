@@ -1,16 +1,10 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import ElectronicsProductImage from '../images/electronics2.jpg'
 import ProductCard from '../components/ProductCard'
-import axios from 'axios'
+//import axios from 'axios'
+import data from '../data/db.json'
 
 const Electronics = () => {
-    const [electronics, setElectronics] = useState([])
-    useEffect(() => {
-        axios.get("http://localhost:8000/electronics")
-            .then(response => {
-            setElectronics(response.data)
-        })
-    }, []);
     return (
         <div className="electronics-page">
             <div className="electronics-hero-container">
@@ -22,7 +16,7 @@ const Electronics = () => {
                     <div className="-products-container">
                         <div className="container">
                             <div className="row p-3">
-                                {electronics.map(item => (
+                                {data.electronics.map(item => (
                                 <div className="col-lg-3 col-md-3  col-6 mt-2">
                                     <ProductCard
                                         id={item.id}
