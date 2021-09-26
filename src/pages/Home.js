@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Image1 from '../images/image-gallery-cone.jpg'
-import Image2 from '../images/image-gallery-orange.jpg'
-import Image3 from '../images/image-gallery-milkbottles.jpg'
-import Image4 from '../images/image-gallery-sugarcubes.jpg'
+import MenProductImage from '../images/men2.jpg'
+import WomenProductImage from '../images/women2.jpg'
+import JewelryProductImage from '../images/jewelry2.jpg'
+import ElectronicsProductImage from '../images/electronics2.jpg'
+import ProductCard from '../components/ProductCard'
+
+
 
 
 const Home = () => {
@@ -30,46 +33,42 @@ const Home = () => {
                 <div className="section-bottom">
                     <div className="-products-container">
                         <div className="container">
-                            <div className="row p-3">
-                                <div className="col-lg-3 col-md-3 col-6">
-                                    <div className="card">
-                                        <img src={Image1} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                    </div>
+                            <div className="row p-5">
+                                <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                    <ProductCard
+                                        id='1'
+                                        name="Men Item"
+                                        description='Lorem ipsum lorem'
+                                        price='10'
+                                        image={MenProductImage}
+                                    />
                                 </div>
-                                <div className="col-lg-3 col-md-3 col-6">
-                                    <div className="card">
-                                        <img src={Image1} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                    </div>
+                                 <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                    <ProductCard
+                                        id='2'
+                                        name="Men Item"
+                                        description='Lorem ipsum lorem'
+                                        price='20'
+                                        image={MenProductImage}
+                                    />
                                 </div>
-                                <div className="col-lg-3 col-md-3 col-6">
-                                    <div className="card">
-                                        <img src={Image1} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                    </div>
+                                 <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                    <ProductCard
+                                        id='3'
+                                        name="Men Item"
+                                        description='Lorem ipsum lorem'
+                                        price='30'
+                                        image={MenProductImage}
+                                    />
                                 </div>
-                                <div className="col-lg-3 col-md-3 col-6">
-                                    <div className="card">
-                                        <img src={Image1} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                    </div>
+                                 <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                    <ProductCard
+                                        id='4'
+                                        name="Men Item"
+                                        description='Lorem ipsum lorem'
+                                        price='40'
+                                        image={MenProductImage}
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -98,45 +97,41 @@ const Home = () => {
                     <div className="-products-container">
                         <div className="container">
                             <div className="row p-3">
-                                <div className="col-lg-3 col-md-3 col-6">
-                                    <div className="card">
-                                        <img src={Image2} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                    </div>
+                                <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                    <ProductCard
+                                        id='1'
+                                        name=' Women Item'
+                                        description='Lorem ipsum lorem'
+                                        price='10'
+                                        image={WomenProductImage}
+                                    />
                                 </div>
-                                <div className="col-lg-3 col-md-3 col-6">
-                                    <div className="card">
-                                        <img src={Image2} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                    </div>
+                                <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                    <ProductCard
+                                        id='2'
+                                        name=' Women Item'
+                                        description='Lorem ipsum lorem'
+                                        price='20'
+                                        image={WomenProductImage}
+                                    />
                                 </div>
-                                <div className="col-lg-3 col-md-3 col-6">
-                                    <div className="card">
-                                        <img src={Image2} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                    </div>
+                                <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                    <ProductCard
+                                        id='3'
+                                        name=' Women Item'
+                                        description='Lorem ipsum lorem'
+                                        price='30'
+                                        image={WomenProductImage}
+                                    />
                                 </div>
-                                <div className="col-lg-3 col-md-3 col-6">
-                                    <div className="card">
-                                        <img src={Image2} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                    </div>
+                                <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                    <ProductCard
+                                        id='4'
+                                        name=' Women Item'
+                                        description='Lorem ipsum lorem'
+                                        price='40'
+                                        image={WomenProductImage}
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -165,45 +160,41 @@ const Home = () => {
                     <div className="-products-container">
                         <div className="container">
                             <div className="row p-3">
-                                <div className="col-lg-3 col-md-3 col-6">
-                                    <div className="card">
-                                        <img src={Image3} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                    </div>
+                                <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                    <ProductCard
+                                        id='1'
+                                        name='Jewelry Item'
+                                        description='Lorem ipsum lorem'
+                                        price='10'
+                                        image={JewelryProductImage}
+                                    />
                                 </div>
-                                <div className="col-lg-3 col-md-3 col-6">
-                                    <div className="card">
-                                        <img src={Image3} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                    </div>
+                                <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                    <ProductCard
+                                        id='2'
+                                        name='Jewelry Item'
+                                        description='Lorem ipsum lorem'
+                                        price='20'
+                                        image={JewelryProductImage}
+                                    />
                                 </div>
-                                <div className="col-lg-3 col-md-3 col-6">
-                                    <div className="card">
-                                        <img src={Image3} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                    </div>
+                                <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                    <ProductCard
+                                        id='3'
+                                        name='Jewelry Item'
+                                        description='Lorem ipsum lorem'
+                                        price='30'
+                                        image={JewelryProductImage}
+                                    />
                                 </div>
-                                <div className="col-lg-3 col-md-3 col-6">
-                                    <div className="card">
-                                        <img src={Image3} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                    </div>
+                                <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                    <ProductCard
+                                        id='4'
+                                        name='Jewelry Item'
+                                        description='Lorem ipsum lorem'
+                                        price='40'
+                                        image={JewelryProductImage}
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -232,45 +223,41 @@ const Home = () => {
                     <div className="-products-container">
                         <div className="container">
                             <div className="row p-3">
-                                <div className="col-lg-3 col-md-3 col-6">
-                                    <div className="card">
-                                        <img src={Image4} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                    </div>
+                                <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                    <ProductCard
+                                        id='1'
+                                        name='Electronics Item'
+                                        description='Lorem ipsum lorem'
+                                        price='10'
+                                        image={ElectronicsProductImage}
+                                    />
                                 </div>
-                                <div className="col-lg-3 col-md-3 col-6">
-                                    <div className="card">
-                                        <img src={Image4} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                    </div>
+                                <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                    <ProductCard
+                                        id='2'
+                                        name='Electronics Item'
+                                        description='Lorem ipsum lorem'
+                                        price='20'
+                                        image={ElectronicsProductImage}
+                                    />
                                 </div>
-                                <div className="col-lg-3 col-md-3 col-6">
-                                    <div className="card">
-                                        <img src={Image4} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                    </div>
+                                <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                    <ProductCard
+                                        id='3'
+                                        name='Electronics Item'
+                                        description='Lorem ipsum lorem'
+                                        price='30'
+                                        image={ElectronicsProductImage}
+                                    />
                                 </div>
-                                <div className="col-lg-3 col-md-3 col-6">
-                                    <div className="card">
-                                        <img src={Image4} className="card-img" alt="..."/>
-                                    <div className="ps-3">
-                                        <div className="fw-bold fs-6">Product Name</div>
-                                        <div className="card-item">Lorem ipsum lorem</div>
-                                        <div className="card-item">Price:20</div>
-                                    </div>
-                                    </div>
+                                <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                    <ProductCard
+                                        id='4'
+                                        name='Electronics Item'
+                                        description='Lorem ipsum lorem'
+                                        price='40'
+                                        image={ElectronicsProductImage}
+                                    />
                                 </div>
                             </div>
                         </div>
