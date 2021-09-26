@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import JewelryProductImage from '../images/jewelry2.jpg'
 import ProductCard from '../components/ProductCard'
 //import axios from 'axios'
