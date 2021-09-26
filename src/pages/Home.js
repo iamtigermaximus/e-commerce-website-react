@@ -36,9 +36,9 @@ const Home = () => {
                                     <div className="card">
                                         <img src={Image1} className="card-img" alt="..."/>
                                     <div className="ps-3">
-                                            <div className="fw-bold fs-6">Product Name</div>
-                                            <div>Lorem ipsum lorem</div>
-                                            <div>Price:20</div>
+                                        <div className="fw-bold fs-6">Product Name</div>
+                                        <div>Lorem ipsum lorem</div>
+                                        <div>Price:20</div>
                                     </div>
                                     </div>
                                 </div>
@@ -46,12 +46,11 @@ const Home = () => {
                                     <div className="card">
                                         <img src={Image1} className="card-img" alt="..."/>
                                     <div className="ps-3">
-                                            <div className="fw-bold fs-6">Product Name</div>
-                                            <div>Lorem ipsum lorem</div>
-                                            <div>Price:20</div>
+                                        <div className="fw-bold fs-6">Product Name</div>
+                                        <div>Lorem ipsum lorem</div>
+                                        <div>Price:20</div>
                                     </div>
                                     </div>
-                                    
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-sm-6">
                                     <div className="card">

@@ -1,6 +1,7 @@
 import {BrowserRouter, Switch, Route } from 'react-router-dom'
 //COMPONENTS
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 //PAGES
 import Home from './pages/Home'
@@ -27,6 +28,7 @@ function App() {
           <Route path="/like"><LikedItems/></Route>
           <Route path="/cart"><Cart/></Route>
         </Switch>
+        <Footer/>
       </BrowserRouter>
     </>
   );
