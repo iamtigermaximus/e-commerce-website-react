@@ -57,7 +57,7 @@ nav{
 }
 
 section{
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 .card-container{
@@ -65,6 +65,7 @@ section{
     height:400px;
     background: transparent !important;
     border-radius: 10px !important;
+    padding-bottom: 50px;
 }
 .card-image-container{
  width: 100%;
