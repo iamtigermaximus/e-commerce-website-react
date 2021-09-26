@@ -67,8 +67,10 @@ section{
     border-radius: 10px !important;
 }
 .card-img{
-  height: 250px;
+    max-width: 100%;
+  height:250px;
   border-radius: 10px !important;
+  
 }
 /*FOOTER*/
 .social-media-icons{
