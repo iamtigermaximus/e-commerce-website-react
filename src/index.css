@@ -60,18 +60,33 @@ section{
     height: 100vh;
     width: 100%;
 }
-.card{
-    width: 250px;
-    height: 380px;
+.card-container{
+    width: 200px;
+    height:400px;
     background: transparent !important;
     border-radius: 10px !important;
 }
-.card-img{
-    max-width: 100%;
-  height:250px;
+.card-image-container{
+ width: 100%;
+  height:300px;
   border-radius: 10px !important;
-  
 }
+.card-image{
+  width: 100%;
+  height:100%;
+  border-radius: 10px !important;
+}
+.card-name{
+    font-size: 15px;
+    font-weight: 500;
+}
+.card-item{
+    font-size: 12px;
+}
+.card-button{
+    font-size: 10px;
+}
+
 /*FOOTER*/
 .social-media-icons{
     display: flex;
@@ -289,22 +304,31 @@ section{
         padding-top: 12px;
         padding-right: 10px;
     }
-    .card{
-    width: 160px;
-    height: 280px;
+.card-container{
+    width: 150px;
+    height:300px;
     background: transparent !important;
     border-radius: 10px !important;
-    margin: 10px;
 }
-.card-img{
-  height: 180px;
-  border-radius: 10px;
+.card-image-container{
+ width: 100%;
+  height:200px;
+  border-radius: 10px !important;
+}
+.card-image{
+  width: 100%;
+  height:100%;
+  border-radius: 10px !important;
+}
+.card-name{
+    font-size: 12px;
+    font-weight: 500;
 }
 .card-item{
     font-size: 10px;
 }
-.btn{
-    font-size: 8px !important;
+.card-button{
+    font-size: 10px;
 }
 
 section{
