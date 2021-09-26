@@ -23,7 +23,7 @@ const Footer = () => {
                         </div>
                         <div className="about-links ">
                             <div className="row text-center pb-5 ">
-                                <div className="col-lg-4 col-md-4"> 
+                                <div className="col-4"> 
                                     <div className="footer-column1 border-border-danger">
                                         <div className="column-title">
                                             <h4 className="title">Column Title 1</h4>
@@ -36,7 +36,7 @@ const Footer = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-4 col-md-4"> 
+                                <div className="col-4"> 
                                     <div className="footer-column2 border-border-danger">
                                         <div className="column-title">
                                             <h4 className="title">Column Title 2</h4>
@@ -49,7 +49,7 @@ const Footer = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-4 col-md-4"> 
+                                <div className="col-4"> 
                                     <div className="footer-column3 border-border-danger">
                                         <div className="column-title">
                                             <h4 className="title">Column Title 3</h4>
@@ -62,12 +62,12 @@ const Footer = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="copyright">
-                                    <div className="row pt-3">
+                            </div>
+                            <div className="copyright">
+                                    <div className="row">
                                         <h6 className="copyright-texts text-light text-center">&copy; <em id="date"></em>Shop 2021</h6>
                                     </div>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
