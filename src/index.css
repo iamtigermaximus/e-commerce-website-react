@@ -62,7 +62,7 @@ section{
 }
 .card{
     width: 250px;
-    height: 350px;
+    height: 380px;
     background: transparent !important;
     border-radius: 10px !important;
 }
@@ -157,7 +157,7 @@ section{
     background-color: #6CDAEE;
 
 }
-.men-section .column1{
+.column1{
     height: 400px;
     background-image: url(./images/men1.jpg);
     background-repeat: no-repeat;
@@ -166,6 +166,14 @@ section{
 }
 .column2{
     height: 400px;
+}
+.column2-content{
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.column2-title{
+    font-size: 50px;
 }
 /*HOME ----WOMEN SECTION*/
 .women-section .section-top{
@@ -261,32 +269,84 @@ section{
         padding-right: 10px;
     }
     .card{
-    width: 180px;
-    height: 250px;
+    width: 160px;
+    height: 280px;
     background: transparent !important;
     border-radius: 10px !important;
+    margin: 10px;
 }
 .card-img{
   height: 180px;
-  border-radius: 10px !important;
-   padding: 10px;
+  border-radius: 10px;
 }
+.card-item{
+    font-size: 10px;
+}
+.btn{
+    font-size: 8px !important;
+}
+
 section{
     height: 100%;
     width: 100%;
 }
-.men-section .section-top{
-    height: 40%;
-    background-color: #1B9CE5;
-    display: flex;
-   justify-content: center;
+.men-hero-container,
+.women-hero-container,
+.jewelry-hero-container,
+.electronics-hero-container
+{
+    height: 20vh;
 }
-
 }
 
   @media (max-width:480px) {
      .heading-content{
          height: 50%;
      }
+.card{
+    width: 130px;
+    height: 240px;
+    background: transparent !important;
+    border-radius: 10px !important;
+    margin: 10px;
+}
+.card-img{
+  height: 150px;
+  border-radius: 10px;
+}
+.card-item{
+    font-size: 10px;
+}
+.btn{
+    font-size: 8px !important;
+}
+.column1{
+    height: 200px;
+    background-image: url(./images/men1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.column2{
+    height: 180px;
+}
+.column2-content{
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.column2-title{
+    font-size: 20px !important;
+}
+.column2-item{
+    font-size: 10px !important;
+}
+/*Footer*/
+.column-title .title{
+    font-size: 14px;
+}
+.column-item{
+    font-size: 10px;
+}
   }
 
