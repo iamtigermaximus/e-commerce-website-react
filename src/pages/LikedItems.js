@@ -2,7 +2,7 @@ import React from 'react'
 
 const LikedItems = () => {
     return (
-        <div>
+        <div className="liked-items-page">
             <h1>Liked Items Page</h1> 
         </div>
     )

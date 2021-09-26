@@ -1,0 +1,105 @@
+{
+    "men":[
+        {
+            "id":1,
+            "name":"Men Item",
+            "description":"Lorem ipsum lorem",
+            "price":10
+        },
+        {
+            "id":2,
+            "name":"Men Item",
+            "description":"Lorem ipsum lorem",
+            "price":20
+        }
+    ],
+    "women":[
+        {
+            "id":1,
+            "name":"Women Item",
+            "description":"Lorem ipsum lorem",
+            "price":10   
+        },
+        {
+            "id":2,
+            "name":"Women Item",
+            "description":"Lorem ipsum lorem",
+            "price":20   
+        }
+    ],
+    "jewelry":[
+        {
+            "id":1,
+            "name":"Jewelry Item",
+            "description":"Lorem ipsum lorem",
+            "price":10   
+        },
+        {
+            "id":2,
+            "name":"Jewelry Item",
+            "description":"Lorem ipsum lorem",
+            "price":20   
+        },
+        {
+            "id":3,
+            "name":"Jewelry Item",
+            "description":"Lorem ipsum lorem",
+            "price":30   
+        },
+        {
+            "id":4,
+            "name":"Jewelry Item",
+            "description":"Lorem ipsum lorem",
+            "price":40   
+        },
+        {
+            "id":5,
+            "name":"Jewelry Item",
+            "description":"Lorem ipsum lorem",
+            "price":50   
+        },
+        {
+            "id":6,
+            "name":"Jewelry Item",
+            "description":"Lorem ipsum lorem",
+            "price":60   
+        },
+        {
+            "id":7,
+            "name":"Jewelry Item",
+            "description":"Lorem ipsum lorem",
+            "price":70   
+        },
+        {
+            "id":8,
+            "name":"Jewelry Item",
+            "description":"Lorem ipsum lorem",
+            "price":80   
+        },{
+            "id":9,
+            "name":"Jewelry Item",
+            "description":"Lorem ipsum lorem",
+            "price":90   
+        },
+        {
+            "id":10,
+            "name":"Jewelry Item",
+            "description":"Lorem ipsum lorem",
+            "price":100   
+        }
+    ],
+    "electronics":[
+        {
+            "id":1,
+            "name":"Electronics Item",
+            "description":"Lorem ipsum lorem",
+            "price":10   
+        },
+        {
+            "id":2,
+            "name":"Electronics Item",
+            "description":"Lorem ipsum lorem",
+            "price":20   
+        }
+    ]
+}
