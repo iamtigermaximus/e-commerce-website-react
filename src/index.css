@@ -38,14 +38,15 @@ nav{
 }
 .cart-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 15%;
+    
 }
 .cart-container li{
     list-style: none;
     padding-top: 12px;
-    
+    padding-right: 10px;
 }
 .cart-img-container{
     height: 100px;
@@ -55,6 +56,9 @@ nav{
 .cart-image{
     height: 100%;
     width: 100%;
+}
+.cart-icon-total{
+    font-size: 10px;
 }
 .burger{
     color: azure;

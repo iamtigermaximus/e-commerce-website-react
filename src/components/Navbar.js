@@ -31,7 +31,7 @@ const Navbar = () => {
             <ul className="cart-container">
                 <li><Link className="item-link" to="/user"><FaUser/></Link></li>
                 <li><Link className="item-link" to="/like"><FaHeart/></Link></li>
-                <li><Link className="item-link" to="/cart"><FaShoppingCart/><span className="text-danger mx-1">{totalItems}</span></Link></li>
+                <li><Link className="item-link" to="/cart"><FaShoppingCart /><span className="text-danger cart-icon-total position-absolute">{totalItems}</span></Link></li>
             </ul>
         </nav>
     )
