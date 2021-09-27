@@ -27,7 +27,7 @@ return <div className="cart-page p-5">
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-6 col-md-8 col-10 mx-auto">
+                    <div className="col-lg-6 col-md-8 col-6 mx-auto">
                         <div className="cart-buttons">
                             <div className="cart-links">
                                 <button className="btn btn-primary col-12 mx-auto fs-6 mb-2" type="submit">

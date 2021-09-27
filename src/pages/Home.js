@@ -34,7 +34,7 @@ const Home = () => {
                 <div className="section-bottom">
                     <div className="-products-container">
                         <div className="container">
-                            <div className="row p-5">
+                            <div className="row p-3">
                                 {data.men.slice(0, 4).map((item,index )=> (
                                     <div className="col-lg-3 col-md-3  col-6 mt-2" key={index}>
                                     <ProductCard
