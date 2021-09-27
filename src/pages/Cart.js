@@ -82,7 +82,7 @@ return <div className="cart-page p-5">
                             </tbody>
                     </table>
                     <div className="col-auto ms-auto">
-                        <h2>Total Price: {cartTotal}</h2>
+                        <h2 className="text-light">Total Price: ${cartTotal}</h2>
                     </div>
                     <div className="col-auto">
                         <button className="btn btn-danger m-2" onClick={() => emptyCart()}>clear cart</button>
