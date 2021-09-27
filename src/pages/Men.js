@@ -7,7 +7,6 @@ import data from '../data/db.json'
 
 const Men =()=> {
     
-    
     return (
         <div className="men-page">
             <div className="men-hero-container">
@@ -18,14 +17,15 @@ const Men =()=> {
              <div className="men-products">
                     <div className="-products-container">
                         <div className="container">
-                            <div className="row p-3">
-                            {data.men.map(item => (
-                                <div className="col-lg-3 col-md-3  col-6 mt-2">
+                        <div className="row p-3">
+                            {data.men.map((item,index)=> (
+                                    <div className="col-lg-3 col-md-3  col-6 mt-2" key={index}>
                                     <ProductCard
                                         id={item.id}
                                         name={item.name}
                                         description={item.description}
                                         price={item.price}
+                                        item={item}
                                         image={MenProductImage}
                                     />
                                 </div>

@@ -45,6 +45,16 @@ nav{
 .cart-container li{
     list-style: none;
     padding-top: 12px;
+    
+}
+.cart-img-container{
+    height: 100px;
+    width: 100px;
+    background-color: royalblue;
+}
+.cart-image{
+    height: 100%;
+    width: 100%;
 }
 .burger{
     color: azure;

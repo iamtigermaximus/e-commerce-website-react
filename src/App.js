@@ -12,10 +12,12 @@ import Electronics from './pages/Electronics'
 import User from './pages/User'
 import LikedItems from './pages/LikedItems'
 import Cart from './pages/Cart'
+import {CartProvider} from 'react-use-cart'
 
 function App() {
   return (
     <>
+      <CartProvider>
       <BrowserRouter>
         <Navbar/>
         <Switch>
@@ -29,7 +31,8 @@ function App() {
           <Route path="/cart"><Cart/></Route>
         </Switch>
         <Footer/>
-      </BrowserRouter>
+        </BrowserRouter>
+        </CartProvider>
     </>
   );
 }

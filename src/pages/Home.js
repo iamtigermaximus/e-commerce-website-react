@@ -5,6 +5,7 @@ import WomenProductImage from '../images/women2.jpg'
 import JewelryProductImage from '../images/jewelry2.jpg'
 import ElectronicsProductImage from '../images/electronics2.jpg'
 import ProductCard from '../components/ProductCard'
+import data from '../data/db.json'
 
 
 
@@ -34,42 +35,18 @@ const Home = () => {
                     <div className="-products-container">
                         <div className="container">
                             <div className="row p-5">
-                                <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                {data.men.slice(0, 4).map((item,index )=> (
+                                    <div className="col-lg-3 col-md-3  col-6 mt-2" key={index}>
                                     <ProductCard
-                                        id='1'
-                                        name="Men Item"
-                                        description='Lorem ipsum lorem'
-                                        price='10'
+                                        id={item.id}
+                                        name={item.name}
+                                        description={item.description}
+                                        price={item.price}
+                                        item={item}
                                         image={MenProductImage}
                                     />
                                 </div>
-                                 <div className="col-lg-3 col-md-3  col-6 mt-2">
-                                    <ProductCard
-                                        id='2'
-                                        name="Men Item"
-                                        description='Lorem ipsum lorem'
-                                        price='20'
-                                        image={MenProductImage}
-                                    />
-                                </div>
-                                 <div className="col-lg-3 col-md-3  col-6 mt-2">
-                                    <ProductCard
-                                        id='3'
-                                        name="Men Item"
-                                        description='Lorem ipsum lorem'
-                                        price='30'
-                                        image={MenProductImage}
-                                    />
-                                </div>
-                                 <div className="col-lg-3 col-md-3  col-6 mt-2">
-                                    <ProductCard
-                                        id='4'
-                                        name="Men Item"
-                                        description='Lorem ipsum lorem'
-                                        price='40'
-                                        image={MenProductImage}
-                                    />
-                                </div>
+                                ))}
                             </div>
                         </div>
                     </div>
@@ -97,42 +74,19 @@ const Home = () => {
                     <div className="-products-container">
                         <div className="container">
                             <div className="row p-3">
-                                <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                {data.women.slice(0, 4).map((item,index ) => (
+                                    <div className="col-lg-3 col-md-3  col-6 mt-2" key={index}>
                                     <ProductCard
-                                        id='1'
-                                        name=' Women Item'
-                                        description='Lorem ipsum lorem'
-                                        price='10'
+                                        id={item.id}
+                                        name={item.name}
+                                        description={item.description}
+                                        price={item.price}
+                                        item={item}
                                         image={WomenProductImage}
                                     />
                                 </div>
-                                <div className="col-lg-3 col-md-3  col-6 mt-2">
-                                    <ProductCard
-                                        id='2'
-                                        name=' Women Item'
-                                        description='Lorem ipsum lorem'
-                                        price='20'
-                                        image={WomenProductImage}
-                                    />
-                                </div>
-                                <div className="col-lg-3 col-md-3  col-6 mt-2">
-                                    <ProductCard
-                                        id='3'
-                                        name=' Women Item'
-                                        description='Lorem ipsum lorem'
-                                        price='30'
-                                        image={WomenProductImage}
-                                    />
-                                </div>
-                                <div className="col-lg-3 col-md-3  col-6 mt-2">
-                                    <ProductCard
-                                        id='4'
-                                        name=' Women Item'
-                                        description='Lorem ipsum lorem'
-                                        price='40'
-                                        image={WomenProductImage}
-                                    />
-                                </div>
+                                ))}
+                                
                             </div>
                         </div>
                     </div>
@@ -160,42 +114,18 @@ const Home = () => {
                     <div className="-products-container">
                         <div className="container">
                             <div className="row p-3">
-                                <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                {data.jewelry.slice(0, 4).map((item,index )=> (
+                                    <div className="col-lg-3 col-md-3  col-6 mt-2" key={index}>
                                     <ProductCard
-                                        id='1'
-                                        name='Jewelry Item'
-                                        description='Lorem ipsum lorem'
-                                        price='10'
+                                        id={item.id}
+                                        name={item.name}
+                                        description={item.description}
+                                        price={item.price}
+                                        item={item}
                                         image={JewelryProductImage}
                                     />
                                 </div>
-                                <div className="col-lg-3 col-md-3  col-6 mt-2">
-                                    <ProductCard
-                                        id='2'
-                                        name='Jewelry Item'
-                                        description='Lorem ipsum lorem'
-                                        price='20'
-                                        image={JewelryProductImage}
-                                    />
-                                </div>
-                                <div className="col-lg-3 col-md-3  col-6 mt-2">
-                                    <ProductCard
-                                        id='3'
-                                        name='Jewelry Item'
-                                        description='Lorem ipsum lorem'
-                                        price='30'
-                                        image={JewelryProductImage}
-                                    />
-                                </div>
-                                <div className="col-lg-3 col-md-3  col-6 mt-2">
-                                    <ProductCard
-                                        id='4'
-                                        name='Jewelry Item'
-                                        description='Lorem ipsum lorem'
-                                        price='40'
-                                        image={JewelryProductImage}
-                                    />
-                                </div>
+                                ))}
                             </div>
                         </div>
                     </div>
@@ -223,42 +153,18 @@ const Home = () => {
                     <div className="-products-container">
                         <div className="container">
                             <div className="row p-3">
-                                <div className="col-lg-3 col-md-3  col-6 mt-2">
+                                {data.electronics.slice(0, 4).map((item,index )=> (
+                                    <div className="col-lg-3 col-md-3  col-6 mt-2" key={index}>
                                     <ProductCard
-                                        id='1'
-                                        name='Electronics Item'
-                                        description='Lorem ipsum lorem'
-                                        price='10'
+                                        id={item.id}
+                                        name={item.name}
+                                        description={item.description}
+                                        price={item.price}
+                                        item={item}
                                         image={ElectronicsProductImage}
                                     />
                                 </div>
-                                <div className="col-lg-3 col-md-3  col-6 mt-2">
-                                    <ProductCard
-                                        id='2'
-                                        name='Electronics Item'
-                                        description='Lorem ipsum lorem'
-                                        price='20'
-                                        image={ElectronicsProductImage}
-                                    />
-                                </div>
-                                <div className="col-lg-3 col-md-3  col-6 mt-2">
-                                    <ProductCard
-                                        id='3'
-                                        name='Electronics Item'
-                                        description='Lorem ipsum lorem'
-                                        price='30'
-                                        image={ElectronicsProductImage}
-                                    />
-                                </div>
-                                <div className="col-lg-3 col-md-3  col-6 mt-2">
-                                    <ProductCard
-                                        id='4'
-                                        name='Electronics Item'
-                                        description='Lorem ipsum lorem'
-                                        price='40'
-                                        image={ElectronicsProductImage}
-                                    />
-                                </div>
+                                ))}
                             </div>
                         </div>
                     </div>

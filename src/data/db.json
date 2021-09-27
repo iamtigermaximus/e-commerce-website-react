@@ -2,59 +2,59 @@
     "men":[
         {
             "id":1,
-            "name":"Men Item",
+            "name":"Men Item 1",
             "description":"Lorem ipsum lorem",
             "price":10
         },
         {
             "id":2,
-            "name":"Men Item",
+            "name":"Men Item 2",
             "description":"Lorem ipsum lorem",
             "price":20
         },{
             "id":3,
-            "name":"Men Item",
+            "name":"Men Item 3",
             "description":"Lorem ipsum lorem",
             "price":30
         },
         {
             "id":4,
-            "name":"Men Item",
+            "name":"Men Item 4",
             "description":"Lorem ipsum lorem",
             "price":40
         },{
             "id":5,
-            "name":"Men Item",
+            "name":"Men Item 5",
             "description":"Lorem ipsum lorem",
             "price":50
         },
         {
             "id":6,
-            "name":"Men Item",
+            "name":"Men Item 6",
             "description":"Lorem ipsum lorem",
             "price":60
         },
         {
             "id":7,
-            "name":"Men Item",
+            "name":"Men Item 7",
             "description":"Lorem ipsum lorem",
             "price":70
         },
         {
             "id":8,
-            "name":"Men Item",
+            "name":"Men Item 8",
             "description":"Lorem ipsum lorem",
             "price":80
         },
         {
             "id":9,
-            "name":"Men Item",
+            "name":"Men Item 9",
             "description":"Lorem ipsum lorem",
             "price":90
         },
         {
             "id":10,
-            "name":"Men Item",
+            "name":"Men Item 10",
             "description":"Lorem ipsum lorem",
             "price":100
         }
@@ -62,61 +62,61 @@
     "women":[
         {
             "id":1,
-            "name":"Women Item",
+            "name":"Women Item 1",
             "description":"Lorem ipsum lorem",
             "price":10   
         },
         {
             "id":2,
-            "name":"Women Item",
+            "name":"Women Item 2",
             "description":"Lorem ipsum lorem",
             "price":20   
         },
         {
             "id":3,
-            "name":"Women Item",
+            "name":"Women Item 3" ,
             "description":"Lorem ipsum lorem",
             "price":30   
         },
         {
             "id":4,
-            "name":"Women Item",
+            "name":"Women Item 4",
             "description":"Lorem ipsum lorem",
             "price":40   
         },
         {
             "id":5,
-            "name":"Women Item",
+            "name":"Women Item 5",
             "description":"Lorem ipsum lorem",
             "price":50   
         },
         {
             "id":6,
-            "name":"Women Item",
+            "name":"Women Item 6",
             "description":"Lorem ipsum lorem",
             "price":60   
         },
         {
             "id":7,
-            "name":"Women Item",
+            "name":"Women Item 7",
             "description":"Lorem ipsum lorem",
             "price":70   
         },
         {
             "id":8,
-            "name":"Women Item",
+            "name":"Women Item 8",
             "description":"Lorem ipsum lorem",
             "price":80   
         },
         {
             "id":9,
-            "name":"Women Item",
+            "name":"Women Item 9",
             "description":"Lorem ipsum lorem",
             "price":90   
         },
         {
             "id":10,
-            "name":"Women Item",
+            "name":"Women Item 10",
             "description":"Lorem ipsum lorem",
             "price":100   
         }
@@ -124,60 +124,60 @@
     "jewelry":[
         {
             "id":1,
-            "name":"Jewelry Item",
+            "name":"Jewelry Item 1",
             "description":"Lorem ipsum lorem",
             "price":10   
         },
         {
             "id":2,
-            "name":"Jewelry Item",
+            "name":"Jewelry Item 2",
             "description":"Lorem ipsum lorem",
             "price":20   
         },
         {
             "id":3,
-            "name":"Jewelry Item",
+            "name":"Jewelry Item 3",
             "description":"Lorem ipsum lorem",
             "price":30   
         },
         {
             "id":4,
-            "name":"Jewelry Item",
+            "name":"Jewelry Item 4",
             "description":"Lorem ipsum lorem",
             "price":40   
         },
         {
             "id":5,
-            "name":"Jewelry Item",
+            "name":"Jewelry Item 5",
             "description":"Lorem ipsum lorem",
             "price":50   
         },
         {
             "id":6,
-            "name":"Jewelry Item",
+            "name":"Jewelry Item 6",
             "description":"Lorem ipsum lorem",
             "price":60   
         },
         {
             "id":7,
-            "name":"Jewelry Item",
+            "name":"Jewelry Item 7",
             "description":"Lorem ipsum lorem",
             "price":70   
         },
         {
             "id":8,
-            "name":"Jewelry Item",
+            "name":"Jewelry Item 8",
             "description":"Lorem ipsum lorem",
             "price":80   
         },{
             "id":9,
-            "name":"Jewelry Item",
+            "name":"Jewelry Item 9",
             "description":"Lorem ipsum lorem",
             "price":90   
         },
         {
             "id":10,
-            "name":"Jewelry Item",
+            "name":"Jewelry Item 10",
             "description":"Lorem ipsum lorem",
             "price":100   
         }
@@ -185,61 +185,61 @@
     "electronics":[
         {
             "id":1,
-            "name":"Electronics Item",
+            "name":"Electronics Item 1",
             "description":"Lorem ipsum lorem",
             "price":10   
         },
         {
             "id":2,
-            "name":"Electronics Item",
+            "name":"Electronics Item 2",
             "description":"Lorem ipsum lorem",
             "price":20   
         },
         {
             "id":3,
-            "name":"Electronics Item",
+            "name":"Electronics Item 3",
             "description":"Lorem ipsum lorem",
             "price":30   
         },
         {
             "id":4,
-            "name":"Electronics Item",
+            "name":"Electronics Item 4",
             "description":"Lorem ipsum lorem",
             "price":40   
         },
         {
             "id":5,
-            "name":"Electronics Item",
+            "name":"Electronics Item 5",
             "description":"Lorem ipsum lorem",
             "price":50   
         },
         {
             "id":6,
-            "name":"Electronics Item",
+            "name":"Electronics Item 6",
             "description":"Lorem ipsum lorem",
             "price":60   
         },
         {
             "id":7,
-            "name":"Electronics Item",
+            "name":"Electronics Item 7",
             "description":"Lorem ipsum lorem",
             "price":70   
         },
         {
             "id":8,
-            "name":"Electronics Item",
+            "name":"Electronics Item 8",
             "description":"Lorem ipsum lorem",
             "price":80   
         },
         {
             "id":9,
-            "name":"Electronics Item",
+            "name":"Electronics Item 9",
             "description":"Lorem ipsum lorem",
             "price":90   
         },
         {
             "id":10,
-            "name":"Electronics Item",
+            "name":"Electronics Item 10",
             "description":"Lorem ipsum lorem",
             "price":100   
         }
