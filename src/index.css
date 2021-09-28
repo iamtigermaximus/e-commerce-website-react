@@ -316,7 +316,7 @@ section{
         background-color:#19181A;
         justify-content: space-around;
         align-items: center;
-        transform: translateY(0%);
+        transform: translateX(0%);
         transition: transform 0.5s ease-out;
     }
     .category.active{

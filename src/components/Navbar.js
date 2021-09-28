@@ -6,7 +6,7 @@ import {useCart} from 'react-use-cart'
 const Navbar = () => {
     const { totalItems } = useCart()
     
-    const [click, setClick] = useState(false);
+    const [click, setClick] = useState(true);
   
     
     const categoryMenu= () => setClick(!click)
@@ -14,9 +14,9 @@ const Navbar = () => {
     return (
         <nav>
             <div className="burger" onClick={categoryMenu}>
-                {click ? <FaTimes/> : <FaBars/>} 
+                {click ? <FaBars/> : <FaTimes/>} 
             </div>
-            <ul className={click ?"category": "category active"} onClick={categoryMenu}>
+            <ul className={click ?"category active": "category"} onClick={categoryMenu}>
                 <li><Link className="item-link" to="/men">MEN</Link></li>
                 <li><Link className="item-link" to="/women">WOMEN</Link></li>
                 <li><Link className="item-link" to="/jewelry">JEWELRY</Link></li>
