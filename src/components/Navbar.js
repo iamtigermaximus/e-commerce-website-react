@@ -9,16 +9,23 @@ import {
 } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { useCart } from 'react-use-cart'
+import styled from 'styled-components'
+
+const NavigationContainer = styled.nav`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #19181a;
+  height: 8vh;
+`
 
 const Navbar = () => {
   const { totalItems } = useCart()
-
   const [click, setClick] = useState(true)
-
   const categoryMenu = () => setClick(!click)
 
   return (
-    <nav>
+    <NavigationContainer>
       <div className='burger' onClick={categoryMenu}>
         {click ? <FaBars /> : <FaTimes />}
       </div>
@@ -84,7 +91,7 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-    </nav>
+    </NavigationContainer>
   )
 }
 

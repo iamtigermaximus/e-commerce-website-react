@@ -3,13 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-nav {
+/* nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #19181a;
   height: 8vh;
-}
+} */
+
 .category {
   display: flex;
   justify-content: space-around;
