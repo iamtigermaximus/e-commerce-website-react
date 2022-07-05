@@ -1,9 +1,23 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
+import styled from 'styled-components'
+
+const FooterContainer = styled.div`
+  background: #19181a;
+  color: #f8f9fa;
+`
+
+const SocialMediaIconsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const SocialMediaIcon = styled.div``
 
 const Footer = () => {
   return (
-    <div className='footer bg-dark text-light'>
+    <FooterContainer className='footer'>
       <div className='footer-links'>
         <div className='social-media-links'>
           <div className='container'>
@@ -12,22 +26,22 @@ const Footer = () => {
                 <div className='social-media-items pb-5'>
                   <div className='social-media-title'>
                     <h1 className='text-center'>You can find us at:</h1>
-                    <div className='social-media-icons'>
-                      <div className='social-media-icon fs-2 text-light'>
+                    <SocialMediaIconsContainer>
+                      <SocialMediaIcon className='fs-2 text-light'>
                         <FaFacebook />
-                      </div>
-                      <div className='social-media-icon fs-2 text-light ps-5'>
+                      </SocialMediaIcon>
+                      <SocialMediaIcon className='fs-2 text-light ps-5'>
                         <FaInstagram />
-                      </div>
-                      <div className='social-media-icon fs-2 text-light ps-5'>
+                      </SocialMediaIcon>
+                      <SocialMediaIcon className='fs-2 text-light ps-5'>
                         <FaTwitter />
-                      </div>
-                    </div>
+                      </SocialMediaIcon>
+                    </SocialMediaIconsContainer>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='about-links '>
+            <div className='about-links'>
               <div className='row text-center pb-5 '>
                 <div className='col-4'>
                   <div className='footer-column1 border-border-danger'>
@@ -80,7 +94,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </FooterContainer>
   )
 }
 

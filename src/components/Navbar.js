@@ -11,12 +11,18 @@ import { Link } from 'react-router-dom'
 import { useCart } from 'react-use-cart'
 import styled from 'styled-components'
 
-const NavigationContainer = styled.nav`
+const NavigationContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #19181a;
   height: 8vh;
+`
+
+const LogoContainer = styled.div`
+  display: flex;
+  font-size: 20px;
+  color: azure;
 `
 
 const Navbar = () => {
@@ -54,7 +60,7 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <div className='logo'>
+      <LogoContainer>
         <Link className='item-link' to='/'>
           <h3>
             <span className='logo-icon'>
@@ -63,7 +69,7 @@ const Navbar = () => {
             SHOP
           </h3>
         </Link>
-      </div>
+      </LogoContainer>
       <div className='search-bar'>
         <input
           className='form-control form-control-sm'
